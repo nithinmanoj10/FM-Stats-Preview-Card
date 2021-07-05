@@ -56,7 +56,7 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 770px) {
   .stat-card {
     width: 90%;
     height: 120vh;
@@ -77,14 +77,35 @@
       margin: 0 auto;
       text-align: center;
       padding: 50px 0;
-
+      height: 80%;
       align-items: center;
     }
   }
 }
 
+@media (max-width: 620px) {
+}
+
 @media (max-width: 500px) {
   .stat-card {
     height: 145vh;
+
+    &__text {
+      height: 85%;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .stat-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(150px, auto);
+    height: 100vh;
+
+    &__text {
+      height: 89%;
+    }
   }
 }
