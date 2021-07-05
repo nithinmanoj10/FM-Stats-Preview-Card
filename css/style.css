@@ -1,1 +1,95 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+:root {
+  --main-background: #090b1a;
+  --card-background: #1b1938;
+  --accent: #aa5cdb;
+  --accent-transparent: #aa5cdbb0;
+  --main-heading-stats: #ffffff;
+  --main-paragraph: #ffffffbf;
+  --stat-headings: #ffffff99;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 93.75%;
+}
+
+.stat-card__heading {
+  font-family: "Inter", sans-serif;
+  color: var(--main-heading-stats);
+}
+
+.stat-card__description {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  word-spacing: 1px;
+  width: 90%;
+  line-height: 1.6;
+  color: var(--main-paragraph);
+}
+
+.purple-text {
+  color: var(--accent);
+}
+
+.stats-box__stat__value {
+  font-family: "Inter", sans-serif;
+  color: var(--main-heading-stats);
+  font-size: 1.5em;
+}
+
+.stats-box__stat__name {
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  color: var(--stat-headings);
+  font-size: 0.7em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: var(--main-background);
+  height: 100vh;
+  display: flex;
+}
+
+.stat-card {
+  margin: auto;
+  width: 80%;
+  height: 65vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--card-background);
+  border-radius: 7px;
+}
+
+.stat-card__description {
+  flex: 1;
+  margin-top: 25px;
+}
+
+.stat-card__text {
+  padding: 60px 63px 65px 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-card__image {
+  background-image: linear-gradient(var(--accent-transparent), var(--accent-transparent)), url(../../images/image-header-desktop.jpg);
+  background-size: cover;
+  border-radius: 0 7px 7px 0;
+}
+
+.stats-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+/*# sourceMappingURL=style.css.map */

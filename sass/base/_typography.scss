@@ -1,0 +1,43 @@
+body {
+  font-size: 93.75%;
+}
+
+.stat-card {
+  &__heading {
+    font-family: "Inter", sans-serif;
+    color: var(--main-heading-stats);
+  }
+
+  &__description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    word-spacing: 1px;
+    width: 90%;
+    line-height: 1.6;
+    color: var(--main-paragraph);
+  }
+}
+
+.purple-text {
+  color: var(--accent);
+}
+
+.stats-box {
+  &__stat {
+    &__value {
+      font-family: "Inter", sans-serif;
+      color: var(--main-heading-stats);
+      font-size: 1.5em;
+    }
+
+    &__name {
+      font-family: "Lexend Deca", sans-serif;
+      text-transform: uppercase;
+      color: var(--stat-headings);
+      font-size: 0.7em;
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+  }
+}
