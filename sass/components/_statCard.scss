@@ -5,13 +5,10 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 65vh;
 
   background-color: var(--card-background);
   border-radius: 7px;
-
-  &__heading {
-    // margin-bottom: 30px;
-  }
 
   &__description {
     flex: 1;
@@ -33,5 +30,53 @@
       url(../../images/image-header-desktop.jpg);
     background-size: cover;
     border-radius: 0 7px 7px 0;
+    background-position: center;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1105px) {
+  .stat-card__text {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1005px) {
+  .stat-card {
+    height: 75vh;
+    grid-template-rows: 75vh;
+    &__text {
+      padding-left: 40px;
+    }
+  }
+  .stats-box {
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 620px) {
+  .stat-card {
+    width: 90%;
+    height: 120vh;
+    margin: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(300px, auto);
+
+    &__image {
+      grid-row: 1/2;
+    }
+
+    &__text {
+      grid-row: 2/3;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      padding: 50px 0;
+
+      align-items: center;
+    }
   }
 }
