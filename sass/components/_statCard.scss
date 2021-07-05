@@ -28,6 +28,7 @@
         var(--accent-transparent)
       ),
       url(../../images/image-header-desktop.jpg);
+
     background-size: cover;
     border-radius: 0 7px 7px 0;
     background-position: center;
@@ -51,7 +52,7 @@
     }
   }
   .stats-box {
-    column-gap: 30px;
+    column-gap: 20px;
   }
 }
 
@@ -66,6 +67,7 @@
     grid-template-rows: minmax(300px, auto);
 
     &__image {
+      border-radius: 7px 7px 0 0;
       grid-row: 1/2;
     }
 
@@ -78,5 +80,11 @@
 
       align-items: center;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  .stat-card {
+    height: 145vh;
   }
 }

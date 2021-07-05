@@ -41,3 +41,13 @@ body {
     }
   }
 }
+
+.attribution {
+  font-family: "Inter", sans-serif;
+  color: rgba(211, 211, 211, 0.692);
+
+  a {
+    color: var(--accent);
+    opacity: 0.692;
+  }
+}

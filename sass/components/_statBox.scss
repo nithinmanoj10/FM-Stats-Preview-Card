@@ -2,14 +2,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
-  //   margin-top: 60px;
 }
 
-// @media (max-width: 620px) {
-//   .stats-box {
-//     margin-top: 50px;
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     row-gap: 30px;
-//   }
-// }
+@media (max-width: 500px) {
+  .stats-box {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
